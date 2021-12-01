@@ -12,7 +12,3 @@ variable "resource_group_location" {
   description = "Location of the resource group as exported by the resourcegroup module."
   type        = string
 }
-
-variable "tags" {
-  type = map(string)
-}
