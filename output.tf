@@ -1,8 +1,11 @@
-output "identities" {
-  value = { for k in keys(azurerm_user_assigned_identity.id) : k => {
-    id           = azurerm_user_assigned_identity.id[k].id
-    principal_id = azurerm_user_assigned_identity.id[k].principal_id
-    client_id    = azurerm_user_assigned_identity.id[k].client_id
-    }
-  }
+output "id" {
+  value = azurerm_user_assigned_identity.this.id
+}
+
+output "principal_id" {
+  value = azurerm_user_assigned_identity.this.principal_id
+}
+
+output "client_id" {
+  value = azurerm_user_assigned_identity.this.client_id
 }

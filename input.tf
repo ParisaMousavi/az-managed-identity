@@ -1,9 +1,9 @@
 variable "name" {
-  type =  string
+  type = string
 }
 
 variable "resource_group_name" {
-  type =  string
+  type = string
 }
 
 variable "location" {
@@ -11,6 +11,6 @@ variable "location" {
 }
 
 variable "additional_tags" {
-  default     = {}
-  type        = map(string)
+  default = {}
+  type    = map(string)
 }
