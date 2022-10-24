@@ -4,3 +4,13 @@ git remote set-url --add --push origin https://p-moosavinezhad@dev.azure.com/p-m
 
 git remote set-url --add --push origin https://github.com/ParisaMousavi/az-managed-identity.git
 ```
+
+# Create a new tag
+```
+git tag -a <year.month.day> -m "description"
+
+git push origin <year.month.day>
+
+```
+
+
