@@ -10,3 +10,7 @@ output "principal_id" {
 output "client_id" {
   value = azurerm_user_assigned_identity.this.client_id
 }
+
+output "name" {
+  value = azurerm_user_assigned_identity.this.name
+}
